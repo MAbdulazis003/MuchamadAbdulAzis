@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Muchamad Abdul Azis</title>
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #4f46e5;
+      --bg: #f1f5f9;
+      --card: #ffffff;
+      --text: #1e293b;
+      --highlight: #c7d2fe;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      margin: 0;
+      padding: 0;
+      color: var(--text);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: var(--card);
+      padding: 20px 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #3730a3;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 40px;
+      background: linear-gradient(135deg, #eef2ff 0%, #c7d2fe 100%);
+      border-radius: 16px;
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container::before {
+      content: "";
+      position: absolute;
+      top: -60px;
+      right: -60px;
+      width: 200px;
+      height: 200px;
+      background: rgba(79, 70, 229, 0.1);
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    .container * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .photo img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid var(--accent);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      color: var(--primary);
+      margin: 10px 0 5px;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: var(--accent);
+      margin-bottom: 30px;
+    }
+
+    .info {
+      margin: 15px 0;
+      text-align: left;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .label {
+      font-weight: 600;
+      display: inline-block;
+      width: 150px;
+      color: #475569;
+    }
+
+    .value {
+      color: var(--text);
+    }
+
+    .social a {
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .social a:hover {
+      color: #3730a3;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #3730a3;
+    }
+
+    .section {
+      max-width: 960px;
+      margin: 60px auto;
+      padding: 40px;
+      background-color: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+      text-align: left;
+    }
+
+    .section h3 {
+      color: var(--primary);
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    .section p, .section ul {
+      line-height: 1.6;
+      color: #475569;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .social-icons a {
+      color: var(--accent);
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #1e40af;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#portofolio">Portofolio</a>
+      <a href="#kontak">Kontak</a>
+      <a href="CV_MuchamadAbdulAzis.pdf" class="btn" download>Download CV</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="photo">
+      <img src="foto-kemeja-hitam.jpg" alt="Foto Muchamad Abdul Azis" />
+    </div>
+    <h1>Muchamad Abdul Azis</h1>
+    <h2>Mahasiswa Teknik Informatika - Universitas Islam Nusantara</h2>
+
+    <div class="info">
+      <span class="label">Status:</span>
+      <span class="value">Mahasiswa Aktif</span>
+    </div>
+    <div class="info">
+      <span class="label">Universitas:</span>
+      <span class="value">Universitas Islam Nusantara</span>
+    </div>
+    <div class="info">
+      <span class="label">Fakultas:</span>
+      <span class="value">Teknik Informatika</span>
+    </div>
+  </div>
+
+  <div class="section" id="tentang">
+    <h3>Tentang Saya</h3>
+    <p>
+      Saya adalah mahasiswa aktif jurusan Teknik Informatika di Universitas Islam Nusantara. Saya memiliki minat besar dalam pengembangan web, pemrograman, dan teknologi digital.
+      Saya suka mempelajari hal baru dan berambisi menjadi pengembang perangkat lunak yang profesional dan bermanfaat.
+    </p>
+  </div>
+
+  <div class="section" id="portofolio">
+    <h3>Portofolio</h3>
+    <p>
+      Beberapa proyek yang pernah saya kerjakan:
+    </p>
+    <ul>
+      <li>Membuat Aplikasi Kasir Sederhana dengan Python</li>
+      <li>Website Portofolio Pribadi dengan HTML dan CSS</li>
+      <li>Program Pengolahan Data Mahasiswa berbasis CLI</li>
+    </ul>
+  </div>
+
+  <div class="section" id="kontak">
+    <h3>Kontak</h3>
+    <div class="info">
+      <span class="label">Nomor WhatsApp:</span>
+      <span class="value">0896-5609-0297</span>
+    </div>
+    <div class="info">
+      <span class="label">Instagram:</span>
+      <span class="value social"><a href="https://instagram.com/mbdlazis" target="_blank">@mbdlazis</a></span>
+    </div>
+    <div class="info">
+      <span class="label">Email:</span>
+      <span class="value social"><a href="mailto:mbdlazis00@gmail.com">mbdlazis00@gmail.com</a></span>
+    </div>
+    <div class="info">
+      <span class="label">GitHub:</span>
+      <span class="value social"><a href="https://github.com/MAbdulazis003" target="_blank">github.com/MAbdulazis003</a></span>
+    </div>
+    <div class="social-icons">
+      <a href="https://instagram.com/mbdlazis" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="mailto:mbdlazis00@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/MAbdulazis003" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://wa.me/6289656090297" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Muchamad Abdul Azis. All rights reserved.
+  </footer>
+</body>
+</html>
